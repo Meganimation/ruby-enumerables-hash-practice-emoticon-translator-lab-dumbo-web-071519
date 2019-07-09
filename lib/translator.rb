@@ -1,7 +1,7 @@
 # require modules here
 
-def load_library
-emoticons = YAML.load(File.open(File.join(File.dirname(__FILE__), 'emoticons.yaml')))
+def load_library(emoticons)
+emoticons = YML.load(File.open(File.join(File.dirname(__FILE__), 'emoticons.yml')))
 end
 
 def get_japanese_emoticon
